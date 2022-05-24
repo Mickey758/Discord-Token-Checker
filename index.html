@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="toast.js"></script>
+    <link rel="stylesheet" href="toast.css">
+    <title>Discord Token Checker</title>
+</head>
+
+<body class="bg-gray-800">
+    <div class="text-white grid place-items-center h-screen text-center">
+        <div>
+            <div>
+                <h1 class="text-6xl font-semibold">Discord Token Checker</h1>
+                <input type="text" placeholder="Discord Token" class="outline-none px-3 py-1 border rounded mt-4 bg-transparent" id="token">
+                <button type="button" class="px-3 py-1 border rounded mt-4 block mx-auto hover:shadow-xl duration-150 hover:border-gray-400 hover:text-gray-300 hover:drop-shadow-xl active:bg-white active:text-gray-800" id="check">Check Token</button>
+            </div>
+            <div id="details" class="bg-gray-900 p-4 mt-16 w-1/2 mx-auto rounded border hidden">
+                <img src="" alt="Account Profile Picture" id="profile" class="rounded-full mx-auto mb-3">
+                <p>Username: <span id="username"></span></p>
+                <p>Bio: <span id="bio"></span></p>
+                <p>Email: <span id="email"></span></p>
+                <p>2 Factor Authentication: <span id="mfa"></span></p>
+                <p>Phone: <span id="phone"></span></p>
+                <p>Verified: <span id="verified"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
